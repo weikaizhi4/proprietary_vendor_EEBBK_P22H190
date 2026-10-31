@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<root>
+    <devices>
+        <!--mic setting--> 
+        <single-mic device="0x80000004">
+            <on>
+                <ctl name="agdsp_access_en" val="1" />
+                <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT" />
+                <ctl name="VBC_IIS_RX0_LRMOD_SEL" val="RIGHT_HIGH" />
+                <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT" />
+                <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT" />
+                <!-- ctl name="VBC_DUMP_POS_CMD" val="DUMP_POS_DAC0_E"/-->
+                <ctl name="VBC_MUX_ADC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2" />
+                <!--ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2" /-->
+                <ctl name="VBC_MUX_ADC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2" />
+                <ctl name="SPECIAL_ADC_ID_SEL" val="VBC_AD0_AD1"/>
+                <ctl name="ag_iis2_ext_sel" val="enable"/>
+                <ctl name="S_NORMAL_AP01_C_CODEC SWITCH" val="1" />
+                <ctl name="S_NORMAL_AP23_C_CODEC SWITCH" val="1" />
+                <ctl name="S_CAPTURE_DSP_CODEC SWITCH" val="1" />
+                <ctl name="S_VOICE_C_CODEC SWITCH" val="1" />
+                <ctl name="S_VOIP_C_CODEC SWITCH" val="1" />
+                <ctl name="S_LOOP_C_CODEC SWITCH" val="1" />
+            </on>
+            <off>
+                <ctl name="SPECIAL_ADC_ID_SEL" val="VBC_AD0"/>
+                <ctl name="S_NORMAL_AP01_C_CODEC SWITCH" val="0" />
+                <ctl name="S_NORMAL_AP23_C_CODEC SWITCH" val="0" />
+                <ctl name="S_CAPTURE_DSP_CODEC SWITCH" val="0" />
+                <ctl name="S_VOICE_C_CODEC SWITCH" val="0" />
+                <ctl name="S_VOIP_C_CODEC SWITCH" val="0" />
+                <ctl name="S_LOOP_C_CODEC SWITCH" val="0" />
+                <ctl name="ag_iis2_ext_sel" val="disable"/>                  
+                <ctl name="Mic Function" val="0" />
+                <ctl name="AUD ADC1L Switch" val="0" />
+                <ctl name="AUD ADC1R Switch" val="0" />
+                <ctl name="ADCL Mixer MainMICADCL Switch" val="0" />
+                <ctl name="ADC LRCLK Select" val="normal"/>
+                <ctl name="ADC1 LRCLK Select" val="normal"/>
+                <ctl name="agdsp_access_en" val="0"/>
+            </off>
+        </single-mic>
+        <!--usb headset mic setting-->
+        <usbheadsetIn device="0x82000000">
+            <on>
+                <ctl name="agdsp_access_en" val="1" />
+                <ctl name="VBC_IIS_RX0_WD_SEL" val="WD_24BIT" />
+                <ctl name="VBC_IIS_RX1_WD_SEL" val="WD_24BIT" />
+                <ctl name="VBC_IIS_RX2_WD_SEL" val="WD_24BIT" />
+                <ctl name="VBC_MUX_ADC0_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2" />
+                <ctl name="VBC_MUX_ADC1_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2" />
+                <ctl name="VBC_MUX_ADC2_IIS_PORT_SEL" val="VBC_IIS_PORT_IIS2" />
+                <ctl name="VBC_IIS_INF_SYS_SEL" val="vbc_iis_to_aon_usb"/>
+                <ctl name="S_NORMAL_AP01_C_USB SWITCH" val="1" />
+                <ctl name="S_NORMAL_AP23_C_USB SWITCH" val="1" />
+                <ctl name="S_CAPTURE_DSP_USB SWITCH" val="1" />
+                <ctl name="S_VOICE_C_USB SWITCH" val="1" />
+                <ctl name="S_VOIP_C_USB SWITCH" val="1" />
+                <ctl name="S_LOOP_C_USB SWITCH" val="1" />
+            </on>
+            <off>
+                <ctl name="agdsp_access_en" val="0"/>
+                <ctl name="S_NORMAL_AP01_C_USB SWITCH" val="0" />
+                <ctl name="S_NORMAL_AP23_C_USB SWITCH" val="0" />
+                <ctl name="S_CAPTURE_DSP_USB SWITCH" val="0" />
+                <ctl name="S_VOICE_C_USB SWITCH" val="0" />
+                <ctl name="S_VOIP_C_USB SWITCH" val="0" />
+                <ctl name="S_LOOP_C_USB SWITCH" val="0" />
+            </off>
+        </usbheadsetIn>
+    </devices>
+</root>

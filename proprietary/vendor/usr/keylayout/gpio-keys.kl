@@ -1,0 +1,10 @@
+key 114     VOLUME_DOWN     WAKE
+key 115     VOLUME_UP       WAKE
+key 116     POWER           WAKE
+key 212     CAMERA          WAKE
+key 0x210   FOCUS           WAKE
+key 712   GESTURE_S
+key 713   GESTURE_V
+key 715   GESTURE_DOUBLE_CLICK
+key 633   CAMERA_REFLECTOR
+key 634   CAMERA_REFLECTOR_OUT

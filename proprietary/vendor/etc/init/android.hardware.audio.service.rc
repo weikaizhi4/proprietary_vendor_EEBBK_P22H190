@@ -1,0 +1,14 @@
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    # chigl@Audio.dump, 2021/10/28
+    # modify for add audio dump permission
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct wakelock media_rw
+    # eebbk keep baseline code for update begin
+    #group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct wakelock
+    # eebbk keep baseline code for update end
+    capabilities BLOCK_SUSPEND
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    onrestart restart audioserver

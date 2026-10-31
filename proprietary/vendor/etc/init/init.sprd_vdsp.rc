@@ -1,0 +1,4 @@
+on post-fs
+	insmod /vendor/lib/modules/sprd_vdsp.ko
+	trigger sprd-flash-ko
+

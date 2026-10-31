@@ -1,0 +1,32 @@
+VERSION,1
+status,enable
+aplogrotate,enable
+prioritypath,external
+sroot,default
+aplogfilesize,256
+aplogmaxsize,99%
+uboot,1
+lastlog,1
+kernel,1
+android,1
+hcidump,1
+
+# #ifdef CONFIG_VENDOR_BBK_EDIT
+# lmh@Wifi.Basic, 2022/03/09
+# modify for modify for disable tcpdump
+tcpdump,0
+# #else /*CONFIG_VENDOR_BBK_EDIT*/
+# eebbk keep baseline code for update begin
+#tcpdump,1
+# eebbk keep baseline code for update end
+# #endif /*CONFIG_VENDOR_BBK_EDIT*/
+
+sgm,1
+sysinfo,1
+ylogdebug,1
+phoneinfo,1
+trace,1
+tcpdump_c,-s 10000
+
+
+

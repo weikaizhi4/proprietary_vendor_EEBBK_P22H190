@@ -1,0 +1,20 @@
+VERSION,1
+status,disable
+aplogrotate,enable
+prioritypath,external
+sroot,default
+aplogfilesize,256
+aplogmaxsize,99%
+uboot,0
+lastlog,0
+kernel,0
+android,0
+hcidump,0
+tcpdump,0
+sgm,0
+sysinfo,0
+ylogdebug,0
+phoneinfo,0
+trace,0
+tcpdump_c,-s 10000
+

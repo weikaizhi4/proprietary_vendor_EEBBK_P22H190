@@ -1,0 +1,33 @@
+# #ifdef CONFIG_VENDOR_BBK_EDIT
+# wxr@Perf.systemBoot ,2022/01/11
+# add for increase system startup speed by make service to insmod *.ko
+# eebbk add begin
+on post-fs
+# else
+# on post-fs
+# eebbk add end
+# #endif /*CONFIG_VENDOR_BBK_EDIT*/
+    insmod /vendor/lib/modules/sprd_sensor.ko
+    insmod /vendor/lib/modules/sprd_flash_drv.ko
+    insmod /vendor/lib/modules/sprd_camera.ko
+    insmod /vendor/lib/modules/sprd_cpp.ko
+    insmod /vendor/lib/modules/mmdvfs.ko
+    insmod /vendor/lib/modules/sprd_fd.ko
+    trigger sprd-flash-ko
+
+on factorytest
+    insmod /vendor/lib/modules/sprd_sensor.ko
+    insmod /vendor/lib/modules/sprd_flash_drv.ko
+    insmod /vendor/lib/modules/sprd_camera.ko
+    insmod /vendor/lib/modules/sprd_cpp.ko
+    insmod /vendor/lib/modules/mmdvfs.ko
+    insmod /vendor/lib/modules/sprd_fd.ko
+    trigger sprd-flash-ko
+
+on cali-fs
+    insmod /vendor/lib/modules/sprd_sensor.ko
+    insmod /vendor/lib/modules/sprd_flash_drv.ko
+    insmod /vendor/lib/modules/sprd_camera.ko
+    insmod /vendor/lib/modules/sprd_cpp.ko
+    insmod /vendor/lib/modules/mmdvfs.ko
+    trigger sprd-flash-ko
