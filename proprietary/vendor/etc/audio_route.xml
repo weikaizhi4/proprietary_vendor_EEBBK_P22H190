@@ -85,6 +85,7 @@
                 <ctl name="HPL EAR Sel" val="HPL" />
                 <ctl name="HPL Mixer DACLHPL Switch" val="1" />
                 <ctl name="HPR Mixer DACRHPR Switch" val="1" />
+                <ctl name="HPR Pin Switch" val="1" />
                 <ctl name="Speaker Function" val="1" />
                 <ctl name="SpkrLeft Sia81xx Power" val="On" />
                 <ctl name="SpkrRight Sia81xx Power" val="On" />
@@ -96,6 +97,7 @@
                 <ctl name="Speaker Function" val="0" />
                 <ctl name="HPL Mixer DACLHPL Switch" val="0" />
                 <ctl name="HPR Mixer DACRHPR Switch" val="0" />
+                <ctl name="HPR Pin Switch" val="0" />
                 <ctl name="HPL EAR Sel" val="EAR" />
                 <ctl name="HP mix mode" val="1" />
             </off>
