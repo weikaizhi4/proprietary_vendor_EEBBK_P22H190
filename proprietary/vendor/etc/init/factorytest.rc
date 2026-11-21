@@ -192,12 +192,12 @@ on factorytest-start
     start gpsd
     start servicemanager
     start wificond
-    insmod /vendor/lib/modules/sprdbt_tty.ko
+    insmod /vendor_dlkm/lib/modules/sprdbt_tty.ko
     chmod 660 /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/state
     chmod 660 /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/type
-    insmod /vendor/lib/modules/sprd_fm.ko
+    insmod /vendor_dlkm/lib/modules/sprd_fm.ko
     chmod 0666 /dev/adf-interface0.0
     chmod 0666 /dev/adf-overlay-engine0.0
     chmod 0666 /dev/adf0

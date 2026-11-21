@@ -907,7 +907,6 @@ PRODUCT_COPY_FILES += \
     vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/hwcomposer.ums512.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.ums512.so \
     vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/memtrack.ums512.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.ums512.so \
     vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/sensors.ums512.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.ums512.so \
-    vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/test.so \
     vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/vendor.sprd.hardware.aprd@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.aprd@1.0-impl.so \
     vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so \
     vendor/eebbk/p22h190/proprietary/vendor/lib64/hw/vendor.sprd.hardware.cplog_connmgr@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.cplog_connmgr@1.0-impl.so \

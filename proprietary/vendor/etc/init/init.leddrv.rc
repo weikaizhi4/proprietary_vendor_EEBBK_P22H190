@@ -1,5 +1,5 @@
 on post-fs
-    insmod /vendor/lib/modules/leds-sc27xx-bltc.ko
+    insmod /vendor_dlkm/lib/modules/leds-sc27xx-bltc.ko
 
 on boot
     wait /sys/class/leds/sc27xx:red/brightness

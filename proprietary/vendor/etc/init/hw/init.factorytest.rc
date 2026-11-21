@@ -40,8 +40,8 @@ on factorytest-fs
     chown  audioserver audio  /dev/audio_pipe_recordproc
     chown  audioserver audio  /dev/audio_pipe_voice
 #Add for TP
-    insmod /vendor/lib/modules/synaptics_dsx_td4310.ko
-    insmod /vendor/lib/modules/ssd20xx_ts.ko
+    insmod /vendor_dlkm/lib/modules/synaptics_dsx_td4310.ko
+    insmod /vendor_dlkm/lib/modules/ssd20xx_ts.ko
 
 on factorytest-start
     start vendor.refnotify

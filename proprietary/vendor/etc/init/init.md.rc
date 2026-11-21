@@ -18,11 +18,11 @@ on post-fs
 # on post-fs
 # eebbk add end
 # #endif /*CONFIG_VENDOR_BBK_EDIT*/
-    insmod /vendor/lib/modules/stmvl53l0.ko
-    insmod /vendor/lib/modules/tcs3430.ko
+    insmod /vendor_dlkm/lib/modules/stmvl53l0.ko
+    insmod /vendor_dlkm/lib/modules/tcs3430.ko
     #insmode synaptics TP ko
-    insmod /vendor/lib/modules/synaptics_dsx_td4310.ko
-    insmod /vendor/lib/modules/ssd20xx_ts.ko
+    insmod /vendor_dlkm/lib/modules/synaptics_dsx_td4310.ko
+    insmod /vendor_dlkm/lib/modules/ssd20xx_ts.ko
 # device/sprd/sharkl5Pro/ums512_1h190/module/bsp/md.rc
 on boot
     chmod 664 /sys/devices/virtual/input/input5/tcs3430_als_x
@@ -78,7 +78,7 @@ on post-fs
 # on post-fs
 # eebbk add end
 # #endif /*CONFIG_VENDOR_BBK_EDIT*/
-	insmod /vendor/lib/modules/mali_gondul.ko
+	insmod /vendor_dlkm/lib/modules/mali_gondul.ko
 # device/sprd/mpool/module/gpu/gondul/main.rc
 on early-init
     setprop ro.hardware.egl "mali"
@@ -655,7 +655,7 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-3
 # device/sprd/mpool/module/performance/schedule/mfeature/kernel/kernel4.14/kernel4.14.rc
 on property:debug.trace_irqsoff_bd=1
-	insmod /vendor/lib/modules/trace_irqsoff_bytedancy.ko
+	insmod /vendor_dlkm/lib/modules/trace_irqsoff_bytedancy.ko
 	chown shell shell /proc/trace_irqoff/enable
 	chown shell shell /proc/trace_irqoff/distribute
 	chown shell shell /proc/trace_irqoff/sampling_period
@@ -666,7 +666,7 @@ on property:debug.trace_irqsoff_bd=1
 	chmod 0644 /proc/trace_irqoff/trace_latency
 
 on property:debug.trace_noschedule_bd=1
-	insmod /vendor/lib/modules/trace_noschedule_bytedancy.ko
+	insmod /vendor_dlkm/lib/modules/trace_noschedule_bytedancy.ko
 	chown shell shell /proc/trace_noschedule/enable
 	chown shell shell /proc/trace_noschedule/distribution
 	chown shell shell /proc/trace_noschedule/stack_trace
@@ -677,7 +677,7 @@ on property:debug.trace_noschedule_bd=1
 	chmod 0644 /proc/trace_noschedule/threshold
 
 on property:debug.trace_runqlat_bd=1
-	insmod /vendor/lib/modules/trace_runqlat_bytedancy.ko
+	insmod /vendor_dlkm/lib/modules/trace_runqlat_bytedancy.ko
 	chown shell shell /proc/trace_runqlat/pid
 	chown shell shell /proc/trace_runqlat/distribution
 	chown shell shell /proc/trace_runqlat/runqlat
@@ -749,7 +749,7 @@ service sprd_mmc_ffu_server /vendor/bin/mmc_ffu do /dev/block/mmcblk0
     oneshot
 # device/sprd/mpool/module/fs/march/arm64/mfeature/kernel/kernel4.14/kernel4.14.rc
 on fs
-    insmod /vendor/lib/modules/incrementalfs.ko
+    insmod /vendor_dlkm/lib/modules/incrementalfs.ko
 # device/sprd/mpool/module/partition/main.rc
 on fs
     mount_all /vendor/etc/fstab.${ro.hardware} --early

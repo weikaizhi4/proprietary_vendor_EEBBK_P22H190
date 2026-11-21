@@ -7,27 +7,27 @@ on post-fs
 # on post-fs
 # eebbk add end
 # #endif /*CONFIG_VENDOR_BBK_EDIT*/
-    insmod /vendor/lib/modules/sprd_sensor.ko
-    insmod /vendor/lib/modules/sprd_flash_drv.ko
-    insmod /vendor/lib/modules/sprd_camera.ko
-    insmod /vendor/lib/modules/sprd_cpp.ko
-    insmod /vendor/lib/modules/mmdvfs.ko
-    insmod /vendor/lib/modules/sprd_fd.ko
+    insmod /vendor_dlkm/lib/modules/sprd_sensor.ko
+    insmod /vendor_dlkm/lib/modules/sprd_flash_drv.ko
+    insmod /vendor_dlkm/lib/modules/sprd_camera.ko
+    insmod /vendor_dlkm/lib/modules/sprd_cpp.ko
+    insmod /vendor_dlkm/lib/modules/mmdvfs.ko
+    insmod /vendor_dlkm/lib/modules/sprd_fd.ko
     trigger sprd-flash-ko
 
 on factorytest
-    insmod /vendor/lib/modules/sprd_sensor.ko
-    insmod /vendor/lib/modules/sprd_flash_drv.ko
-    insmod /vendor/lib/modules/sprd_camera.ko
-    insmod /vendor/lib/modules/sprd_cpp.ko
-    insmod /vendor/lib/modules/mmdvfs.ko
-    insmod /vendor/lib/modules/sprd_fd.ko
+    insmod /vendor_dlkm/lib/modules/sprd_sensor.ko
+    insmod /vendor_dlkm/lib/modules/sprd_flash_drv.ko
+    insmod /vendor_dlkm/lib/modules/sprd_camera.ko
+    insmod /vendor_dlkm/lib/modules/sprd_cpp.ko
+    insmod /vendor_dlkm/lib/modules/mmdvfs.ko
+    insmod /vendor_dlkm/lib/modules/sprd_fd.ko
     trigger sprd-flash-ko
 
 on cali-fs
-    insmod /vendor/lib/modules/sprd_sensor.ko
-    insmod /vendor/lib/modules/sprd_flash_drv.ko
-    insmod /vendor/lib/modules/sprd_camera.ko
-    insmod /vendor/lib/modules/sprd_cpp.ko
-    insmod /vendor/lib/modules/mmdvfs.ko
+    insmod /vendor_dlkm/lib/modules/sprd_sensor.ko
+    insmod /vendor_dlkm/lib/modules/sprd_flash_drv.ko
+    insmod /vendor_dlkm/lib/modules/sprd_camera.ko
+    insmod /vendor_dlkm/lib/modules/sprd_cpp.ko
+    insmod /vendor_dlkm/lib/modules/mmdvfs.ko
     trigger sprd-flash-ko

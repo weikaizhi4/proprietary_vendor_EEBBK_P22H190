@@ -16,10 +16,10 @@
 <MediaCodecs>
     <Encoders>
         <MediaCodec name="OMX.sprd.h264.encoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="652-658" />
-            <Limit name="measured-frame-rate-720x480" range="341-345" />
-            <Limit name="measured-frame-rate-1280x720" range="154-195" />
-            <Limit name="performance-point-1920x1080" range="30-30" />
+            <Limit name="measured-frame-rate-320x240" range="684-696" />
+            <Limit name="measured-frame-rate-720x480" range="229-233" />
+            <Limit name="measured-frame-rate-1280x720" range="116-120" />
+            <Limit name="performance-point-1920x1080" range="60-60" />
         </MediaCodec>
         <MediaCodec name="OMX.sprd.h265.encoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-320x240" range="652-658" />
@@ -72,3 +72,4 @@
         </MediaCodec>
     </Decoders>
 </MediaCodecs>
+
